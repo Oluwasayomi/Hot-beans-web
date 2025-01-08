@@ -1,65 +1,257 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Hot Beans Web</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
-  <div class="main">
-    <div class="navbar">
-      <div class="icon">
-        <h4 class="logo">Hot Beans Web</h4>
-      </div> 
+  <div class="hero">
+    <nav>
+      <img src="Logo.png">
+      <ul id='MenuItems'>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+        <li><a href="vacancies.html">Vacancies</a></li>
+        <li><a href="contactus.html">Contact Us</a></li>
+        <li><a href="courses.html">Courses</a></li>
+        <li> <button class="btn" onclick="document.location='login.html'">Login</button></li>
+      </ul>
+      <input class="switch" id="darkswitch" type="checkbox">
+    </nav>
+
+    
+
+    <div class="content">
+      <h1>Hot <span>Beans</span> Web</h1>
+      <h3>We are a web development company here to design, build, and develop websites for our clients to hit their
+        goals. <br> We build, create and maintain websites and applications on the internet. </h3>
     </div>
+
   </div>
-      
-      <div class="menu">
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="aboutus.html">ABOUT US</a></li>
-          <li><a href="vacancies.html">VACANCIES</a></li>
-          <li><a href="contactus.html">CONTACT US</a></li>
-          <li><a href="courses.html">COURSES</a></li>
-        </ul>
+
+  <!----Login = login.html---->
+  
+  <!----Register = register.html---->
+
+  <!----About Us---->
+  <section class="about">
+
+    <div class="title">
+      <h2>About Us</h2>
+    </div>
+
+    <div class="main">
+      <div class="about-text">
+        <h4>Hot Beans Webs was founded in the year 2021 and has quickly expanded, having over 10,000 employees in the
+          United Kingdom alone.</h4>
+        <h4>We have several brilliant employees working for our company. Meet the team;</h>
+          <h4>Web Developers <span>& Designer</span></h4>
+          <img src="Employees.png">
+      </div>
+    </div>
+
+  </section>
+
+  <!----Vacancies---->
+  <section class="vacancies">
+
+    <div class="title">
+      <h2>Vacancies</h2>
+    </div>
+
+    <div class="vacancies-text">
+      <h4>We look forward to welcoming more IT-enthusiast into our company. If you're a person who has completed
+        training courses or qualifications related to web development and are now looking for a job as a web developer,
+        you have come to the right place. Below are the available vacancies at Hot Beans Web;</h4>
+    </div>
+
+    <div class="v-box">
+
+      <div class="v-card">
+        <h5>Junior Web developer - Bristol</h5>
+        <div class="pra">
+          <p>Are you passionate about web development and eager to kickstart your career in a dynamic and
+            remote-friendly environment? Look no further than Hot Beans Web, where we're on the lookout for a talented
+            Junior Web Developer to join our team. If you have a knack for coding, a hunger for learning, and a desire
+            to make your mark in the world of web development, we want to hear from you!</p>
+          <p style="text-align: center;">
+            <a class="button" href="apply.html">Apply now</a>
+          </p>
+        </div>
       </div>
 
-        <div class="search">
-          <input class="srch" type="search" name="" placeholder="Type to text">
-          <a href="#"> <button class="btn"> Search </button></a>
+      <div class="v-card">
+        <h5>Junior Web designer - Bedfordshire </h5>
+        <div class="pra">
+          <p>Are you ready to embark on a creative journey that transcends the ordinary? If you have a passion for
+            designing and building exceptional websites, we have the perfect opportunity for you! Hot Beans Web’s Design
+            Implementation Department is expanding, and we're on the lookout for a talented individual to join there
+            innovative team.</p>
+          <p style="text-align: center;">
+            <a class="button" href="apply.html">Apply now</a>
+          </p>
         </div>
+      </div>
 
-        <div class="content">
-          <h1>Hot <br><span>Beans</span> <br>Web</h1>
-          <p class="par">We are a web development company here to design, build, and develop websites for our clients to hit their goals. We build, create and maintain websites and applications on the internet. </p>
-          <button class="cn" onclick="show()"><a href="#">JOIN US</a></button>
+      <div class="v-card">
+        <h5>Web developer - London</h5>
+        <div class="pra">
+          <p>This is a contract Hot Beans Web Developer role and will be a remote position. The Web Developer will be
+            responsible for the development, implementation, and maintenance of web-based applications using Laravel PHP
+            Framework. The Web Developer will also be involved in the design and integration of applications and will
+            work collaboratively with a team of developers, designers, and managers.</p>
+          <p style="text-align: center;">
+            <a class="button" href="apply.html">Apply now</a>
+          </p>
         </div>
+      </div>
 
-          <div class="form" id="login">
-            <h2>Login Here</h2>
-            <input type="email" name="email" placeholder="Enter Email Here">
-            <input type="password" name="" placeholder="Enter Password Here">
-            <button class="btnn" onclick="dshow()"><a href="#">Login</a></button>
-            
-            <p class="link">Don't have an account?<br>
-            <a href="#">Sign up here</a></p>
-            <p class="liw">Log in with</p>
+      <div class="v-card">
+        <h5>Lead Web designer - Northampton</h5>
+        <div class="pra">
+          <p>As Lead Design Engineer for Hot Beans Web, you will be working in a creative and challenging environment,
+            managing a wide range of projects across our industry frameworks. Responsible for the successful delivery of
+            projects and programmes of work, you will co-ordinate multi-disciplinary project teams from project
+            inception through to completion of construction. If you think you are a suitable match, do apply!</p>
+          <p style="text-align: center;">
+            <a class="button" href="apply.html">Apply now</a>
+          </p>
+        </div>
+      </div>
 
-            <div class="icons">
-              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-              <a href="#"><ion-icon name="logo-google"></ion-icon></a>
-              <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+    </div>
+
+  </section>
+
+  <!----Contact Us---->
+  <div class="contact-us">
+
+    <div class="title">
+      <h2>Contact Us</h2>
+    </div>
+
+    <div class="c-box">
+
+      <div class="c-card">
+        <i class="fa-solid fa-location-dot"></i>
+        <h5>Address</h5>
+        <div class="pra">
+          <p>Hot Beans Web, <br>
+            London, <br>
+            United Kingdom</p>
+        </div>
+      </div>
+
+      <div class="c-card">
+        <i class="fa-solid fa-phone"></i>
+        <h5>Phone Number</h5>
+        <div class="pra">
+          <p>+44 07983 762 321</p>
+        </div>
+      </div>
+
+      <div class="c-card">
+        <i class="fa-solid fa-envelope"></i>
+        <h5>Email</h5>
+        <div class="pra">
+          <p>hotbeansweb@gmail.com</p>
+        </div>
+      </div>
+
+    </div>
+
+    <a class="button" href="#">Leave a message</a>
+
+  </div>
+
+  <!----Courses---->
+  <div class="courses">
+    <div class="title">
+      <h2>Courses</h2>
+    </div>
+
+    <div class="courses-text">
+      <h4>Hot Beans Web created some free courses for web developers and enthusiastic, or people interested in web
+        development. They include:</h4>
+    </div>
+
+    <div class="box">
+      <div class="card">
+        <i class="fa-solid fa-bars" style="color: #b2a4d4;"></i>
+        <h5>Responsive Web design and Web Development – HTML and CSS</h5>
+        <div class="pra">
+          <p>Learn how to create a responsive website using HTML and CSS.</p>
+          <p style="text-align: center;">
+            <img src="responsive.png">
+            <a class="button" href="#">Read More</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-bars" style="color: #b2a4d4;"></i>
+        <h5>Back-end Web development</h5>
+        <div class="pra">
+          <p>Learn how to create a back-end website using HTML and CSS.</p>
+          <p style="text-align: center;">
+            <img src="back-end.png">
+            <a class="button" href="#">Read More</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-bars" style="color: #b2a4d4;"></i>
+        <h5>HTML, CSS, and JavaScript for Web developers</h5>
+        <div class="pra">
+          <p>Everything you need to know about HTML, CSS, and Javascript as a web developer.</p>
+          <p style="text-align: center;">
+            <img src="html.png">
+            <a class="button" href="#">Read More</a>
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <i class="fa-solid fa-bars" style="color: #b2a4d4;"></i>
+        <h5>Intoduction to Front-end development</h5>
+        <div class="pra">
+          <p>Learn how to create a front-end website using HTML and CSS.</p>
+          <p style="text-align: center;">
+            <img src="front-end.png">
+            <a class="button" href="#">Read More</a>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  </section>
+
+  <!----Footer---->
+  <footer>
+    <p>Hot Beans Web</p>
+    <p>For more information, please contact us at hotbeansweb@gmail.com</p>
+    <div class="social">
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+    </div>
+    <p class="end">Copyright by Hot Beans Web</p>
+  </footer>
+
+  <script src="script.js"></script>
   
-          </div>
-          
-<script src="script.js"></script>
-<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
-          
 </body>
 
 </html>

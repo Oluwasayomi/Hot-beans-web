@@ -1,9 +1,5 @@
-function show() {
-    var loginForm = document.getElementById("login");
-    loginForm.style.display = "block";
-  }
+var darkswitch = document.getElementById("darkswitch");
   
-  function dshow() {
-    var loginForm = document.getElementById("login");
-    loginForm.style.display = "none";
-  }
+darkswitch.onclick = function(){
+  document.body.classList.toggle("dark-theme");
+}
