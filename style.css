@@ -12,7 +12,7 @@ html {
 
 
 :root{
-  --primary-image: url(background.JPG);
+  --primary-image: url(Background.png);
   --primary-color: #E6e6fa;
   --secondary-image: black;
 }
